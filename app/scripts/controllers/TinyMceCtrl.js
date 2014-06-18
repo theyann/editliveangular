@@ -6,4 +6,4 @@
 
 angular.module('editliveangularApp')
   .controller('TinyMceCtrl', function () {
-  });
+});

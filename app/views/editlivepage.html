@@ -1,20 +1,14 @@
 <h1>Here is the EditLive page</h1>
 <p><a href="#/">Go home</a></p>
-<p>Below are 2 instances of the EditLive directive</p>
+<p>click <a ng-click="addSection()">HERE</a> to add a section</p>
 
 <br/><br/>
 
-<h4>Instance 1</h4>
-<editlive id="1"></editlive>
-<br/>
-<h4>Instance 2</h4>
-<editlive id="2"></editlive>
+<div ng-repeat="section in editLiveSections">
+  <editlive section="section"></editlive>
+</div>
 
 <br/><br/>
 <h4>Live Results, type something in the EditLive editors and watch it change below</h4>
-<ul>
-  <li>Instance 1</li>
-  <li>{{ text1 }}</li>
-  <li>Instance 2</li>
-  <li>{{ text2 }}</li>
-</ul>
+<a ng-click="onPurge()">PURGE</a>
+<pre>{{ editLiveSections | json }}</pre>

@@ -1,11 +1,5 @@
-<h5>In EditLive Directive. EditLive should appear below. ID = {{ id }}</h5>
+<h5>Section</h5>
 
-<!-- Create, Configure and Show the EditLive! Instance -->
-<script type='text/javascript'>
-  // Create a new EditLive! instance with the name "ELApplet", a height of 400 pixels and a width of 700 pixels.
-  var editlive = new EditLiveJava("ELApplet", 700, 400);
-
-  // .show is the final call and instructs the JavaScript library (editlivejava.js) to insert a new EditLive! instance
-  //  at the this location.
-  editlive.show();
-</script>
+<div id="editLive{{ section.id }}" style="border: 1px solid gray; width: 700px; height: 250px; overflow: auto;">
+  {{ section.content }}
+</div>

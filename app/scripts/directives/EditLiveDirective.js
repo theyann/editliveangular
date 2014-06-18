@@ -10,7 +10,10 @@ angular.module('editliveangularApp')
       restrict: 'E',
       templateUrl: 'views/partials/editlive.html',
       scope: {
-        id: '='
+        section: '='
+      },
+      link: function(scope) {
+        scope.$emit('editLiveReady', scope.section.id);
       }
     };
   });

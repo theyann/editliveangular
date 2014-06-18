@@ -30,6 +30,7 @@ TIP: this file can be dynamically generated using ASP, JSP or PHP to achieve run
                 Uncomment the following line to load an external style sheet for the editor
                 -->
                 <!-- <link rel="stylesheet" href="http://www.yourserver.com/style.css" type="text/css"/> -->
+                <link rel="stylesheet" href="styles/editLiveStyles.css" type="text/css"/>
 
                 <!--
                 Specify any embedded styles for the editor
@@ -128,7 +129,7 @@ TIP: this file can be dynamically generated using ASP, JSP or PHP to achieve run
             disableInlineImageResizing="false"
             disableInlineTableResizing="false"
             enableTrackChanges="false"
-            stylesVisibility="blacklist"
+            stylesVisibility="whitelist"
             >
         <!-- Define Custom Tags actions -->
         <!--

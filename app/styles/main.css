@@ -77,3 +77,10 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+.editor {
+  height: 400px;
+  width: 700px;
+}
